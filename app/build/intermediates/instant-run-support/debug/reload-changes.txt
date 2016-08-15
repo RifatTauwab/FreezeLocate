@@ -1,0 +1,12 @@
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$2$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$7$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$1ConnectThread$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$8$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$2$1GetRetailerInfoThread$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$9$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$6$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$3$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$4$override.class
+CHANGED,C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\deeptotv\freezelocate\ActivityNormal$5$override.class

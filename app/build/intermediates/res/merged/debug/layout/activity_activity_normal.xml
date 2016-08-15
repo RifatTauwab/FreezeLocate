@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.deeptotv.freezelocate.ActivityNormal">
+
+    <EditText
+        android:id="@+id/edittext_barcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="enter barcode"
+        android:digits="0123456789"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/loc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_barcode"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/loc_lat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Latitude"
+            android:inputType="text"
+            android:enabled="false" />
+        <EditText
+            android:id="@+id/loc_long"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Longitude"
+            android:inputType="text"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/loc_layout"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/type_code_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Freeze type" />
+    <Spinner
+        android:id="@+id/type_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:ems="10"
+        android:entries="@array/type_arrays" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/product_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/type_code_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/product_type_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Product type" />
+        <Spinner
+            android:id="@+id/product_type_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:entries="@array/product_arrays" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/freeze_brand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/product_code_layout"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/freeze_brand_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="freeze brand" />
+    <Spinner
+        android:id="@+id/freeze_brand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:ems="10"
+        android:entries="@array/freeze_brand_arrays" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/freeze_capacity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/freeze_brand_layout"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/freeze_capacity_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="freeze capacity" />
+    <Spinner
+        android:id="@+id/freeze_capacity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:ems="10"
+        android:entries="@array/freeze_capacity_arrays" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/asset_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/freeze_capacity_layout"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/asset_date_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="select year" />
+    <Spinner
+        android:id="@+id/asset_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:ems="10"
+        android:entries="@array/asset_date_arrays" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/asset_serial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="serial"
+        android:maxLength="6"
+
+        android:digits="BZ0123456789"
+        android:inputType="text"
+        android:layout_below="@id/asset_date_layout"/>
+    <EditText
+        android:id="@+id/asset_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="asset code"
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:layout_below="@id/asset_serial"/>
+    <EditText
+        android:id="@+id/seqno_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="seq no"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+
+        android:layout_below="@id/asset_code"/>
+    <EditText
+        android:id="@+id/dealer_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Dealer Code"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_below="@id/seqno_edittext"/>
+
+    <EditText
+        android:id="@+id/dealer_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Dealer name"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_below="@id/dealer_code"/>
+    <EditText
+        android:id="@+id/outlet_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Outlet Name"
+        android:inputType="text"
+        android:layout_below="@id/dealer_name"/>
+
+    <EditText
+        android:id="@+id/proprieter_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Proprieter Name"
+        android:inputType="text"
+        android:layout_below="@id/outlet_name"/>
+
+    <TextView
+        android:id="@+id/address_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@id/proprieter_name"/>
+    <EditText
+        android:id="@+id/prevaddress_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="previous address"
+        android:inputType="text"
+        android:layout_below="@id/address_textview"/>
+    <CheckBox
+        android:id="@+id/chkAddressOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Address Ok"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/prevaddress_edittext"/>
+    <LinearLayout
+        android:id="@+id/dis_thana_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkAddressOk"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/district_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="District"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/thana_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Thana(PS)"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/village_house_road_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dis_thana_layout"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/village_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="village/block"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/houseNo_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="House No"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/roadNo_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Road No"
+            android:inputType="text" />
+
+        </LinearLayout>
+    <EditText
+        android:id="@+id/retailer_mobile_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Retailer Mobile No"
+        android:digits="0123456789"
+        android:maxLength="11"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/village_house_road_layout"/>
+    <EditText
+        android:id="@+id/documentNo_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="document no"
+        android:enabled="false"
+        android:inputType="text"
+        android:layout_below="@id/retailer_mobile_no"/>
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/documentNo_edittext"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/get_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Get location" />
+
+        <Button android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Send Data"
+            android:onClick="onClickSendButton" />
+
+        <Button android:id="@+id/exit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Exit"
+            android:onClick="onClickExit" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

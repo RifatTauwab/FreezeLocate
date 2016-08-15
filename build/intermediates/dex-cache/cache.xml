@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\libs\postgresql-9.3-1102.jdbc3.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="bad73013364e340cd8dcaea92ec010fc022547f1">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\postgresql-9.3-1102.jdbc3_00aff56a409cbffc3db51c691b1a61d4034be88f.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_ccc097604ecd80c2d2e22911bc81955dc9805c72.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_3b26cf7b6a09718f6b08dca2d792d446960d82fb.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_a09f5662e962314a905e0025ea1315e697ee204c.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_f28c6142b30ca29e12e51e3b31672443794d7441.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_c6edf69e1205bd3bd2e34998133b65bdb318a975.jar" />
+    </item>
+    <item
+        jar="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\DeeptoTV\AndroidStudioProjects\FreezeLocate\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_7bfbc187ae159e11775c82a673033b36937fe771.jar" />
+    </item>
+
+</items>
